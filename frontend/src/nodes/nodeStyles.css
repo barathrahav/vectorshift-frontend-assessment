@@ -1,0 +1,45 @@
+.node {
+  background: #0f172a;
+  border: 1px solid #1e293b;
+  border-radius: 8px;
+  padding: 10px;
+  color: #e5e7eb;
+  min-width: 200px;
+  font-size: 13px;
+}
+
+.node strong {
+  font-size: 14px;
+  display: block;
+  margin-bottom: 6px;
+  color: #f8fafc;
+}
+
+.node label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 6px;
+}
+
+.node input,
+.node textarea,
+.node select {
+  background: #020617;
+  border: 1px solid #334155;
+  color: #e5e7eb;
+  border-radius: 4px;
+  padding: 4px 6px;
+}
+
+.node textarea {
+  resize: none;
+  overflow: hidden;
+}
+
+.react-flow__handle {
+  background: #6366f1;
+  border: none;
+  width: 8px;
+  height: 8px;
+}
