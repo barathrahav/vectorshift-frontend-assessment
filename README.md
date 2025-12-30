@@ -3,6 +3,8 @@
 This repository contains my solution for the VectorShift Frontend Technical Assessment.
 The project demonstrates scalable node abstraction, dynamic UI behavior, backend integration, and clean architecture for a no-code style pipeline builder.
 
+---
+
 ## 📁 Project Structure
 ```
 .
@@ -20,6 +22,8 @@ The project demonstrates scalable node abstraction, dynamic UI behavior, backend
 │
 └── README.md
 ```
+---
+
 ## 🚀 Features Implemented
 ### ✅ Part 1: Node Abstraction
 - Introduced a reusable BaseNode component to eliminate duplication.
@@ -48,6 +52,8 @@ The project demonstrates scalable node abstraction, dynamic UI behavior, backend
     - Frontend displays results in a user-friendly alert.
     - Proper CORS handling added for local development.
 
+---
+
 ### 🖥️ Running the Project Locally
 **Frontend**
 ```
@@ -55,7 +61,7 @@ cd frontend
 npm install
 npm start 
 ```
-Runs at: http://localhost:3000
+- Runs at: http://localhost:3000
 
 **Backend**
 ```
@@ -65,8 +71,10 @@ py -m venv venv
 pip install fastapi uvicorn python-multipart
 py -m uvicorn main:app --reload
 ```
-Runs at:http://127.0.0.1:8000
-Swagger Docs:http://127.0.0.1:8000/docs
+- Runs at:http://127.0.0.1:8000
+- Swagger Docs:http://127.0.0.1:8000/docs
+
+---
 
 🔄 Submitting a Pipeline
 
@@ -78,12 +86,16 @@ Swagger Docs:http://127.0.0.1:8000/docs
     - Whether the graph is a DAG
 - Results are shown via alert in the UI
 
+---
+
 🧠 Design Decisions
 
 - BaseNode abstraction ensures scalability and maintainability as node types grow.
 - Logic and layout responsibilities are clearly separated.
 - Minimal but expressive UI to prioritize clarity.
 - Backend kept intentionally simple and readable.
+
+---
 
 🎥 Screen Recording
 
@@ -92,6 +104,8 @@ A short screen recording walkthrough is included, covering:
 - TextNode dynamic behavior
 - BaseNode abstraction
 - Backend integration and DAG validation
+
+---
 
 ✅ Summary
 
