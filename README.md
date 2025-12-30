@@ -1,9 +1,10 @@
-VectorShift Frontend Technical Assessment
+# VectorShift Frontend Technical Assessment
 
 This repository contains my solution for the VectorShift Frontend Technical Assessment.
 The project demonstrates scalable node abstraction, dynamic UI behavior, backend integration, and clean architecture for a no-code style pipeline builder.
 
-📁 Project Structure
+## 📁 Project Structure
+```
 .
 ├── frontend/
 │   ├── src/
@@ -18,9 +19,9 @@ The project demonstrates scalable node abstraction, dynamic UI behavior, backend
 │   └── venv/               # Python virtual environment
 │
 └── README.md
-🚀 Features Implemented
-✅ Part 1: Node Abstraction
-
+```
+## 🚀 Features Implemented
+### ✅ Part 1: Node Abstraction
 - Introduced a reusable BaseNode component to eliminate duplication.
 - All nodes define only:
     - title
@@ -29,20 +30,17 @@ The project demonstrates scalable node abstraction, dynamic UI behavior, backend
     - body content
 - Added 5 new nodes (Number, Condition, Delay, API, Merge) to demonstrate scalability.
 
-✅ Part 2: Styling
-
+### ✅ Part 2: Styling
 - Applied unified styling across all nodes.
 - Consistent layout, spacing, and handle appearance.
 - Designed to resemble a clean no-code editor interface.
 
-✅ Part 3: Text Node Logic
-
+### ✅ Part 3: Text Node Logic
 - TextNode automatically resizes based on content.
 - Supports dynamic variables using {{variableName}}.
 - Each variable dynamically creates a new input handle.
 
-✅ Part 4: Backend Integration
-
+### ✅ Part 4: Backend Integration
 - Frontend submits pipeline nodes and edges to backend.
 - Backend:
     - Counts number of nodes and edges
@@ -50,24 +48,23 @@ The project demonstrates scalable node abstraction, dynamic UI behavior, backend
     - Frontend displays results in a user-friendly alert.
     - Proper CORS handling added for local development.
 
-🖥️ Running the Project Locally
-
-Frontend
-
+### 🖥️ Running the Project Locally
+**Frontend**
+```
 cd frontend
 npm install
 npm start 
-
+```
 Runs at: http://localhost:3000
 
-Backend
-
+**Backend**
+```
 cd backend
 py -m venv venv
 .\venv\Scripts\activate
 pip install fastapi uvicorn python-multipart
 py -m uvicorn main:app --reload
-
+```
 Runs at:http://127.0.0.1:8000
 Swagger Docs:http://127.0.0.1:8000/docs
 
