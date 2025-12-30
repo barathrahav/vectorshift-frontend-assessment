@@ -71,8 +71,8 @@ py -m venv venv
 pip install fastapi uvicorn python-multipart
 py -m uvicorn main:app --reload
 ```
-- Runs at:http://127.0.0.1:8000
-- Swagger Docs:http://127.0.0.1:8000/docs
+- Runs at: http://127.0.0.1:8000
+- Swagger Docs: http://127.0.0.1:8000/docs
 
 ---
 
